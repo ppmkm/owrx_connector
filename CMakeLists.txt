@@ -26,6 +26,12 @@ SET(CMAKE_C_FLAGS_DEBUG "-g -O3 -fopt-info-vec")
 SET(CMAKE_CXX_FLAGS_RELEASE "-O2")
 SET(CMAKE_C_FLAGS_RELEASE "-O2")
 
+
+SET(CMAKE_CXX_FLAGS_NATIVE "-march=native -Ofast")
+SET(CMAKE_C_FLAGS_NATIVE "-march=native -Ofast")
+
+
+
 if (HAS_IFUNC)
     add_definitions(-DOWRX_CONNECTOR_FMV)
     SET(CMAKE_CXX_FLAGS_RELEASE "-O3")
